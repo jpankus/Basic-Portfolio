@@ -9,7 +9,7 @@ html, body {
 
 
 body {
-	background: url('assets/images/textured_background.png'); 
+	background-image: url('../images/textured_background.png'); 
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	margin: 0px;
 	padding: 0px;
@@ -24,9 +24,17 @@ h1 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: bold;
 	font-size: 30px;
-	color: #4aaaa5;
+	font: center;
+	color: #fff;
 }
 h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #4aaaa5;
+}
+
+h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: bold;
 	font-size: 30px;
@@ -36,19 +44,36 @@ nav {
 	height: 20px;
 	display: flex;
 	justify-content: flex-end;
+	float:right;
+	position:absolute;
+	right:0;
 }
+p {
+	font-size:24px;
+	line-height:120%;
+}
+
 section {
 	background: #ffffff;
 	border: 1px solid #dddddd;
 	width: 588px;
 	padding: 40px 30px 30px 30px;
+	position: absolute;
+	left: 50px;
 }
 aside {
-	width: 208px;
-	height: 133px;
-	padding: 30px 30px 35px 30px;
-
+	width: 300px;
+	position: absolute;
+	left: 800px;
+	top: 128px;
+	height: 200px;
+	border: 1px solid #dddddd;
+	padding: 30px;
+	background-color: white;
+	display:inline-block;
+	float: left;
 }
+
 a {
 	color: #777777;
 	text-decoration:none;
@@ -76,8 +101,6 @@ input {
 textarea {
 	font-color: #777;
 	text-decoration:none;
-
-
 }
 
 /* Id's */
@@ -90,14 +113,44 @@ textarea {
 	align-items: center;
 	justify-content: space-between;
 }
-#main-block {
-	width: 960px;
+#main-block-contact {
+	width: 700px;
 	margin: 38px auto;
-	display: flex;
 	justify-content: space-between;
+	display:inline-block;
+	float: left;
 	
 }
+#main-block-about {
+	width: 700px;
+	margin: 38px auto;
+	justify-content: space-between;
+	display:inline-block;
+	float: left;
+}
+
+#main-block-portfolio {
+	width: 50%;
+	height:80%;
+	margin: 38px auto;
+	justify-content: space-between;
+	display:inline-block;
+	float: left;
+	
+}
+
+#portfolio-block {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	width: 588px;
+	padding: 40px 30px 30px 30px;
+	position: absolute;
+	left: 50px;
+	
+}
+
 #about-image {
+	width:200px;
 	margin: 10px 25px 10px 0px;
 	float: left;
 }
@@ -112,15 +165,13 @@ textarea {
 	margin: 30px 0 20px 0;
 }
 #icons {
-	float:right;
-	padding-right:100px;
-	width: 80px;
+	width: 400px;
 	height: 60px;
 	justify-content: space-between;
 }
 #footer-text {
 	font-size: 12px;
-	color: #fff;
+	color: #cccccc;
 }
 #footer {
 	background: #666666;
@@ -129,10 +180,12 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 }
 
 /* classes */
+.push{
+	height: 100px;
+}
 
 .wrapper {
 	min-height: 100%;
@@ -142,7 +195,8 @@ textarea {
 
 }
 .header-text {
-	background: #777;
+	background: #4aaaa5;
+	padding-left: 10px;
 	width: 250px;
 	height: 90px;
 	display: flex;
@@ -171,12 +225,47 @@ textarea {
 	color: white;
 	text-align: center;
 }
-.port-pic {
-	width: 588px;
-	margin-top: 40px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+.portfolio_pic {
+	height: 200px;
+	float:left;
+	margin-bottom: 60px;
+	position: relative;
+}
+.portfolio_pic:last-child {
+	margin-bottom: 0px;
+}
+
+.port-pic-1 {
+	width:250px;
+	height:180px;
+}
+.portfolio_pic_text_block {
+	background: #4aaaa5;
+	width: 100%;
+	height: 40px;
+	margin-top: 136px;
+	padding-top: 20px;
+	position: absolute;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	transition: all 0.2s linear;
+}
+
+.portfolio_pic:last-child {
+	margin-bottom: 0px;
+}
+
+
+#get-hub-icon{
+	width:100px;
+}
+#stacked-icon{
+	width: 100px;
+}
+#linkedin-icon{
+	width: 100px;
 }
 
 
